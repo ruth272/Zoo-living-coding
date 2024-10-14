@@ -52,7 +52,7 @@ public class Exam1_Tester {
     Fish fish3 = new Fish(11, 6);
     Fish fish4 = new Fish(11, 6);
     Fish fish5 = new Fish(11, 6);
-    assertEquals(12, Animal.numAnimals);
+    assertEquals(12, Animal.numAnimals);      //.numAnimals is why we increment
   }
 
   @Test
@@ -87,7 +87,7 @@ public class Exam1_Tester {
   public void test8() {
     Tiger tiger = new Tiger(33, "white");
     Fish fish = new Fish(11, 6);
-    assertEquals(1, tiger.compareTo(fish));
+    assertEquals(1, tiger.compareTo(fish));       //for compare method
     assertEquals(-1, fish.compareTo(tiger));
     assertEquals(0, tiger.compareTo(tiger));
   }

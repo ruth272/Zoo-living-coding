@@ -17,18 +17,18 @@ public class Zoo {
 	int[] numFins; //these values are only meaningful for fish
 	String[] types; //the type of the animals
 
-	public void feed(int food){
+	public void feed(int food){	
 		for(int i = 0; i < weights.length; i++){
 			if (types[i].equals("Fish"))
-				weights[i] += (int)(food * 0.5 + 11);
+				weights[i] += (int)(food * 0.5 + 11);			//copy and paste into fish without the [i]
 			else if (types[i].equals("Tiger"))
-				weights[i] += (int)(food / 0.3);
+				weights[i] += (int)(food / 0.3);				//copy and paste into tiger without the [i]
 		}
 	}
 
-	public void move(int distance){
+	public void move(int distance){						//doesnt diviide into fish and tiger so it goes in animal
 		for(int i = 0; i < weights.length; i++)
-			weights[i] -= 0.1 * distance;
+			weights[i] -= 0.1 * distance;				//copy and paste without the for loop
 	}
 
 

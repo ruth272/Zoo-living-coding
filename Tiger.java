@@ -1,16 +1,16 @@
 public class Tiger extends Animal {
-    int furColor;
+    private String furColors;       //so it can only be accessed in this class
 
-    public Tiger(int weight, int furColor) {
-        super(weight);                      //why super
-        this.furColor = furColor;
+    public Tiger(int weight, String furColors) {
+        super(weight);                      //super bc its calling from the animal class
+        this.furColors = furColors;         //
     }
 
-    public String toString() {
-        return weight + " " + furColor;
+    public String toString() {                  //from .toString in test cases
+        return weight + " " + furColors;
     }
 
-    public void feed(int food) {
+    public void feed(int food) {            //from zoo
         weight += (int)(food / 0.3);
     }
 }
